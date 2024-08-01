@@ -1,6 +1,7 @@
-// src/components/ProductTable.js
+
 import React from 'react';
 import './ProductTable.css';
+import { FaFilter } from 'react-icons/fa'; 
 
 function ProductTable() {
   const products = Array.from({ length: 10 }, (_, index) => ({
@@ -13,11 +14,16 @@ function ProductTable() {
 
   return (
     <div className="product-table">
-      <div className="table-header">
+    <div className="table-header">
+      <div className="left-group">
         <input type="text" placeholder="Search Here..." />
-        <button className="filter-button">Filter</button>
+        <button className="filter-button">
+        <FaFilter className="filter-icon" />  Filter</button>
+      </div>
+      <div className="right-group">
         <button className="add-product-button">Add Product</button>
       </div>
+    </div>
       <table>
         <thead>
           <tr>
@@ -41,16 +47,25 @@ function ProductTable() {
         </tbody>
       </table>
       <div className="pagination">
-        <span>Number of rows</span>
-        <select>
-          <option>10</option>
-          <option>20</option>
-          <option>50</option>
-        </select>
+       <div className="left-group">
+       <span>Number of rows</span>
+    <select className="custom-select">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+    </select>
+        </div>
         <div className="page-nav">
+        <div className="right-group">
           <button>Previous</button>
-          <button>1</button>
+          <button className='active'>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>...</button>
+          <button>12</button>
           <button>Next</button>
+        </div>
         </div>
       </div>
     </div>
