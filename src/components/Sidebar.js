@@ -27,12 +27,16 @@ function Sidebar() {
           Report
         </li>
       </ul>
-      <div className="sidebar-footer">
-        <div className="sidebar-footer-content">
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut erat purus.</p>
-        </div>
-      </div>
+      <div class="card">
+    <div class="circle"></div>
+    <div class="circlee"></div>
+     <div class="content">
+        <h2>Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut erat purus.</p>
+    </div>
+</div>
+
+
     </div>
   );
 }
