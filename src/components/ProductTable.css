@@ -1,12 +1,22 @@
 .product-table {
     padding: 20px;
   }
-  
   .table-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center; 
     margin-bottom: 20px;
   }
+  
+  .table-header .left-group {
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  .table-header .right-group {
+    display: flex;
+  }
+  
   
   .table-header input {
     width: 300px;
@@ -25,9 +35,21 @@
   }
   
   .filter-button {
-    background-color: #007bff;
-    margin-right: 10px;
-  }
+      display: flex;
+      align-items: center;
+      gap: 5px; 
+      background: #007bff; 
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .filter-icon {
+      font-size: 16px; 
+    }
+    
   
   .add-product-button {
     background-color: #28a745;
@@ -55,11 +77,78 @@
     align-items: center;
     margin-top: 20px;
   }
+    .page-nav {
+      display: flex;
+      align-items: center;
+      gap: 5px; 
+    }
+    
+    .page-nav button {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      background-color: #f4f4f4;
+      color: #333;
+      cursor: pointer;
+      border-radius: 4px; 
+      font-size: 14px;
+      transition: all 0.3s ease; 
+    }
+    
+    .page-nav button:hover {
+      background-color: #e2e2e2; 
+      border-color: #ccc; 
+    }
+    
+    .page-nav button.active {
+      background-color: #007bff;
+      color: #fff; 
+      border-color: #007bff;
+    }
+    
+    .page-nav button:disabled {
+      background-color: #ddd; 
+      color: #999; 
+      cursor: not-allowed; 
+      border-color: #ddd; 
+    }
+    
+    .page-nav button:not(:last-child) {
+      margin-right: 5px; 
+    }
+    
+    .page-nav button:first-child {
+      border-radius: 4px 0 0 4px; 
+    }
+    
+    .page-nav button:last-child {
+      border-radius: 0 4px 4px 0; 
+    }
   
-  .page-nav button {
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    background-color: #f4f4f4;
+  .pagination.left-group {
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  .pagination .right-group {
+    display: flex;
+  }
+
+  .custom-select {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
     cursor: pointer;
+  }
+  
+  .custom-select:hover {
+    border-color: #aaa; 
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    border-color: #007bff; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); 
   }
   
