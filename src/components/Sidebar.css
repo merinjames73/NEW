@@ -1,4 +1,4 @@
-/* Sidebar.css */
+
 .sidebar {
   width: 250px;
   height: 50vh;
@@ -10,7 +10,7 @@
 }
 
 .sidebar-header {
-  padding: 20px;
+  padding: 12.5px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -43,20 +43,53 @@
   font-size: 18px;
 }
 
-.sidebar-footer {
-  margin-top: 350px;
+.card {
+  margin-top: 320px;
+  width: 220px;
+  height: 170px;
+  background: linear-gradient(196deg,#00729a , #0bbd91 );
+  border-radius: 20px;
   padding: 20px;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  color: white;
-  text-align: center;
   box-sizing: border-box;
+  position: relative;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.circlee{
+  height: 45px;
+  width: 80px;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  position:relative;
+  top: -20px;
+  left: 50px;
+  background-color: white;
+ 
 }
 
-.sidebar-footer h4 {
+.circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #2596be 0%, #2596be 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: -30px; 
+  left: 76px; 
+  z-index:1;
+}
+
+.content {
+  margin-top: -10px; 
+  text-align: left;
+}
+
+.content h2 {
+  color:#ddd;
   margin: 0 0 10px 0;
 }
 
-.sidebar-footer p {
+.content p {
+  font-size: 0.8rem;
   margin: 0;
-  font-size: 14px;
 }
+
