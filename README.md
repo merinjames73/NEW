@@ -1,7 +1,4 @@
 
-### 'npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons'
-To install the necessary
-
 In the project directory, you can run:
 
 ### `npm start`
